@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #e0a604;
+    font-family: sans-serif;
+    background: linear-gradient(90deg, rgba(224, 166, 4, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(224, 166, 4, 1) 100%);
+}
+
+.btn {
+    color:rgb(248, 225, 163);
+    text-decoration: none;
+    background-color: rgba(212, 155, 0, 0.859);
+    display: inline-block;
+    padding: 20px 5px;
+    width: 100%;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+a:hover {
+    background-color: rgba(236, 185, 0, 0.725);
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.flex-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 2px solid black;
+}
+
+.flex-nav li {
+    flex: 3;
+}
+
+.flex-nav .social {
+    flex: 1;
+}
+
+.logo {
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+section, footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px 0;
+    color: white;
+    font-weight: 100;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.toggleNav {
+    display: none;
+}
+
+input[type="submit"] {
+    background-color: rgba(212, 155, 0, 0.859);
+    color: white;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(236, 185, 0, 0.725);
+}
+
+/* взято з гугла */
+/* Для іконок версії 6 (Бренди) */
+.fa-brands, .fab {
+    font-family: "Font Awesome 6 Brands" !important;
+    font-weight: 400;
+}
+
+/* Для іконок версії 4.7 */
+.fa {
+    font-family: "FontAwesome" !important;
+}
+
+@media all and (max-width: 1000px) {
+    .flex-nav ul {
+        flex-wrap: wrap;
+    }
+
+    .flex-nav li {
+        flex: 1 1 50%;
+    }
+
+    .flex-nav .social {
+        flex: 1 1 25%;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .toggleNav {
+        display: block;
+    }
+
+    .flex-nav li {
+        flex-basis: 100%;
+    }
+}

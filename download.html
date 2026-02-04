@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>download</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="logo" width="200px"></a>
+            <a href="mod.html"><img src="mod.png" alt="mod_logo" width="200px"></a>
+            <a href="https://factorio.com/"><img src="factorio-icon.png" alt="factorio_logo" width="200px"></a>
+        </div>
+        <header>
+            <h1><a class="btn" href="download.html">скачати мод</a></h1>
+        </header>
+        <nav class="flex-nav">
+            <a href="#" class="toggleNav btn">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </a>
+            <ul>
+                <li><a class="btn" href="#">about mod</a></li>
+                <li><a class="btn" href="#">fatorio</a></li>
+                <li><a class="btn" href="#">download</a></li>
+                <li><a class="btn" href="#">questions</a></li>
+                <li><a class="btn" href="#">link to steam</a></li>
+                <li><a class="btn" href="#">register</a></li>
+                <li><a class="btn" href="#">login</a></li>
+                <li><a class="btn" href="#">login</a></li>
+                <li class="social"><a class="btn" href="#"><i class="fab fa-steam"></i></a></li>
+                <li class="social"><a class="btn" href="#"><i class="fa fa-github"></i></a></li>
+                <li class="social"><a class="btn" href="https://www.factorio.com/"><img src="factorio-icon.png" alt="Factorio"
+                            height="13px"></a></li>
+                <li class="social"><a class="btn" href="#"><img src="mod.png" alt="mod" height="13px"></a></li>
+            </ul>
+        </nav>
+        <section class="banner">
+            <img class="img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8tNCqmdGbLpYpGNVaaMZaN8TNUnnvsCwcWd3knG6Qx9RaxvgNZujBb7IgysgNxmlSS547gaW2SzeJUpxSJkQQQ0MQW9u7got-6MP8K3smMg&s=10"
+                alt="factorio">
+        </section>
+        <section class="content" id="txt">
+            <p>мод ще у розробці</p>
+        </section>
+        <section class="singup">
+            <form>
+                <input type="text" placeholder="Enter your email">
+                <input type="text" placeholder="Enter your name">
+                <input type="submit" value="Sign Up">
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2026 <a class="btn" href="license.txt">License</a></p>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('.toggleNav').on('click', function () {
+                $('.flex-nav ul').toggle();
+            });
+        });
+    </script>
+</body>
+</html>
